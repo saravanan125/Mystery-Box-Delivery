@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read culinary stories, cooking tips, and food adventures from around the world.">
+    <title>Stories - Mystery Flavor Box</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css">
+    <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🎁</span>
+                    <span class="logo-text">Mystery Flavor</span>
+                </a>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="boxes.html">Our Boxes</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html" class="active">Stories</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <span class="sun-icon">☀️</span>
+                        <span class="moon-icon">🌙</span>
+                    </button>
+                    <a href="dashboard.html" class="btn-nav">Dashboard</a>
+                    <a href="login.html" class="btn-primary">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="section" style="padding-top: 6rem;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Blog & Stories</span>
+                <h1 class="section-title">Culinary Adventures & Insights</h1>
+                <p class="section-description">
+                    Discover stories from our community, cooking tips from chefs, and cultural deep-dives into global cuisines.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Post -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="featured-post">
+                <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&h=500&fit=crop" alt="Featured story">
+                <div class="featured-content">
+                    <span class="post-badge">Featured Story</span>
+                    <h2 class="featured-title">The Secret Spice Markets of Morocco</h2>
+                    <p class="featured-excerpt">Journey through the ancient souks of Marrakech and discover the hidden world of spice traders who have perfected their craft over generations.</p>
+                    <div class="post-meta">
+                        <span>By Elena Martinez</span>
+                        <span>•</span>
+                        <span>February 5, 2026</span>
+                        <span>•</span>
+                        <span>8 min read</span>
+                    </div>
+                    <a href="#" class="btn-primary">Read Story</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop" alt="Mediterranean cuisine">
+                    <div class="blog-content">
+                        <span class="blog-category">Cuisine Guide</span>
+                        <h3>Mediterranean Cooking Essentials</h3>
+                        <p>Everything you need to know about the heart-healthy Mediterranean diet and its core ingredients.</p>
+                        <div class="post-meta">
+                            <span>David Kim</span>
+                            <span>•</span>
+                            <span>Feb 3, 2026</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=400&h=300&fit=crop" alt="Spice storage">
+                    <div class="blog-content">
+                        <span class="blog-category">Tips & Tricks</span>
+                        <h3>How to Store Spices for Maximum Flavor</h3>
+                        <p>Professional tips for organizing and preserving your spice collection to maintain peak freshness.</p>
+                        <div class="post-meta">
+                            <span>Amara Okafor</span>
+                            <span>•</span>
+                            <span>Jan 28, 2026</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?w=400&h=300&fit=crop" alt="Thai cooking">
+                    <div class="blog-content">
+                        <span class="blog-category">Member Story</span>
+                        <h3>From Kitchen Novice to Thai Food Expert</h3>
+                        <p>Sarah shares her journey of discovering Thai cuisine through our monthly boxes.</p>
+                        <div class="post-meta">
+                            <span>Sarah Chen</span>
+                            <span>•</span>
+                            <span>Jan 25, 2026</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=400&h=300&fit=crop" alt="Knife skills">
+                    <div class="blog-content">
+                        <span class="blog-category">Skills</span>
+                        <h3>Master Your Knife Skills in 5 Steps</h3>
+                        <p>Learn essential cutting techniques that will transform your cooking efficiency and presentation.</p>
+                        <div class="post-meta">
+                            <span>David Kim</span>
+                            <span>•</span>
+                            <span>Jan 20, 2026</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&h=300&fit=crop" alt="Street food">
+                    <div class="blog-content">
+                        <span class="blog-category">Culture</span>
+                        <h3>The Rise of Street Food Culture</h3>
+                        <p>Exploring how street food has evolved from humble origins to gourmet sensation.</p>
+                        <div class="post-meta">
+                            <span>Elena Martinez</span>
+                            <span>•</span>
+                            <span>Jan 15, 2026</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=400&h=300&fit=crop" alt="Fermentation">
+                    <div class="blog-content">
+                        <span class="blog-category">Techniques</span>
+                        <h3>Beginner's Guide to Fermentation</h3>
+                        <p>Unlock the ancient art of fermentation with our easy-to-follow guide for home cooks.</p>
+                        <div class="post-meta">
+                            <span>Amara Okafor</span>
+                            <span>•</span>
+                            <span>Jan 10, 2026</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div style="text-align: center; margin-top: var(--space-2xl);">
+                <button class="btn-secondary" style="padding: 1rem 3rem;">Load More Stories</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter CTA -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <h2 class="cta-title">Get Stories Delivered to Your Inbox</h2>
+                    <p class="cta-description">Subscribe to our newsletter for weekly cooking tips, recipes, and culinary adventures.</p>
+                    <form class="newsletter-form" style="max-width: 500px; margin: var(--space-lg) 0;">
+                        <input type="email" placeholder="Your email address" required style="flex: 1; padding: var(--space-md); border: 2px solid var(--border-light); border-radius: var(--radius-md); background: var(--surface);">
+                        <button type="submit" class="btn-primary" style="padding: var(--space-md) var(--space-xl);">Subscribe</button>
+                    </form>
+                    <div class="cta-guarantee">
+                        <span class="guarantee-icon">✓</span>
+                        <span>Weekly stories • No spam • Unsubscribe anytime</span>
+                    </div>
+                </div>
+                <div class="cta-visual">
+                    <div class="cta-boxes">
+                        <div class="mini-box box-1"></div>
+                        <div class="mini-box box-2"></div>
+                        <div class="mini-box box-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">🎁</span>
+                        <span class="logo-text">Mystery Flavor</span>
+                    </a>
+                    <p class="footer-description">Discover culinary adventures delivered to your door.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">📹</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="boxes.html">Our Boxes</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="footer-newsletter-text">Get exclusive recipes and early access.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mystery Flavor Box. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    
+    <style>
+        .featured-post {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-2xl);
+            background: var(--surface);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            margin-bottom: var(--space-2xl);
+        }
+        
+        .featured-post img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .featured-content {
+            padding: var(--space-2xl);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .post-badge {
+            display: inline-block;
+            padding: var(--space-xs) var(--space-md);
+            background: var(--primary-color);
+            color: white;
+            border-radius: var(--radius-full);
+            font-size: 0.8125rem;
+            font-weight: 700;
+            margin-bottom: var(--space-md);
+            align-self: flex-start;
+        }
+        
+        .featured-title {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: var(--space-md);
+            line-height: 1.2;
+        }
+        
+        .featured-excerpt {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            margin-bottom: var(--space-lg);
+            line-height: 1.7;
+        }
+        
+        .post-meta {
+            display: flex;
+            gap: var(--space-sm);
+            color: var(--text-muted);
+            font-size: 0.9375rem;
+            margin-bottom: var(--space-lg);
+        }
+        
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: var(--space-xl);
+        }
+        
+        .blog-card {
+            background: var(--surface);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition-normal);
+            cursor: pointer;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .blog-card img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+        
+        .blog-content {
+            padding: var(--space-lg);
+        }
+        
+        .blog-category {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: var(--surface-elevated);
+            color: var(--primary-color);
+            border-radius: var(--radius-full);
+            font-size: 0.8125rem;
+            font-weight: 700;
+            margin-bottom: var(--space-sm);
+        }
+        
+        .blog-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: var(--space-sm);
+        }
+        
+        .blog-card p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: var(--space-md);
+        }
+
+        @media (max-width: 1024px) {
+            .featured-post {
+                grid-template-columns: 1fr;
+            }
+            
+            .featured-post img {
+                height: 300px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .featured-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</body>
+</html>

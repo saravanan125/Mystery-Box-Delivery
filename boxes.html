@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Choose your perfect Mystery Flavor Box subscription - Artisan Explorer, Global Fusion, or Seasonal Delights. Free shipping on all plans.">
+    <title>Our Boxes - Mystery Flavor Box</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css">
+    <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🎁</span>
+                    <span class="logo-text">Mystery Flavor</span>
+                </a>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="boxes.html" class="active">Our Boxes</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Stories</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <span class="sun-icon">☀️</span>
+                        <span class="moon-icon">🌙</span>
+                    </button>
+                    <a href="dashboard.html" class="btn-nav">Dashboard</a>
+                    <a href="login.html" class="btn-primary">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="section" style="padding-top: 6rem; padding-bottom: 0;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Choose Your Adventure</span>
+                <h1 class="section-title">Our Subscription Boxes</h1>
+                <p class="section-description">
+                    Three unique experiences tailored to your culinary journey. All plans include free shipping, exclusive recipes, and access to our community.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PRICING TOGGLE ========== -->
+    <section class="section" style="padding-top: var(--space-xl);">
+        <div class="container" style="max-width: 600px;">
+            <div style="display: flex; justify-content: center; gap: var(--space-md); margin-bottom: var(--space-2xl);">
+                <button class="pricing-toggle active" data-period="monthly">Monthly</button>
+                <button class="pricing-toggle" data-period="annual">Annual <span style="color: var(--secondary-color); font-size: 0.8rem; margin-left: 4px;">Save 20%</span></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PRICING CARDS ========== -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="boxes-grid">
+                <!-- Artisan Explorer -->
+                <div class="box-card pricing-card">
+                    <div class="box-card-image">
+                        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=500&h=600&fit=crop" 
+                             alt="Artisan Explorer Box" 
+                             loading="lazy">
+                        <div class="box-badge">Most Popular</div>
+                    </div>
+                    <div class="box-card-content">
+                        <h3 class="box-card-title">Artisan Explorer</h3>
+                        <p class="box-card-description">Discover handcrafted ingredients from small-batch producers worldwide. Perfect for curious home cooks.</p>
+                        
+                        <div class="pricing-display">
+                            <div class="price-monthly">
+                                <span class="price-amount">$49</span>
+                                <span class="price-period">/month</span>
+                            </div>
+                            <div class="price-annual" style="display: none;">
+                                <span class="price-amount">$39</span>
+                                <span class="price-period">/month</span>
+                                <span class="price-savings">$470/year (save $118)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="box-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>8-10 Premium Ingredients</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>3 Exclusive Recipes</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Video Tutorials</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Vegetarian Options</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Community Access</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Free Shipping</span>
+                            </div>
+                        </div>
+                        
+                        <a href="login.html" class="btn-primary" style="width: 100%; margin-top: var(--space-lg);">Subscribe Now</a>
+                    </div>
+                </div>
+                
+                <!-- Global Fusion -->
+                <div class="box-card pricing-card featured">
+                    <div class="box-card-image">
+                        <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=500&h=600&fit=crop" 
+                             alt="Global Fusion Box" 
+                             loading="lazy">
+                        <div class="box-badge premium">Premium</div>
+                    </div>
+                    <div class="box-card-content">
+                        <h3 class="box-card-title">Global Fusion</h3>
+                        <p class="box-card-description">Experience fusion cuisine with exotic ingredients and chef-signature recipes. For adventurous food enthusiasts.</p>
+                        
+                        <div class="pricing-display">
+                            <div class="price-monthly">
+                                <span class="price-amount">$79</span>
+                                <span class="price-period">/month</span>
+                            </div>
+                            <div class="price-annual" style="display: none;">
+                                <span class="price-amount">$63</span>
+                                <span class="price-period">/month</span>
+                                <span class="price-savings">$756/year (save $192)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="box-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>12-15 Premium Ingredients</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>5 Exclusive Recipes</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>HD Video Tutorials</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Rare & Exotic Finds</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Live Chef Sessions</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Priority Support</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Bonus Cooking Tools</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Free Global Shipping</span>
+                            </div>
+                        </div>
+                        
+                        <a href="login.html" class="btn-primary" style="width: 100%; margin-top: var(--space-lg);">Subscribe Now</a>
+                    </div>
+                </div>
+                
+                <!-- Seasonal Delights -->
+                <div class="box-card pricing-card">
+                    <div class="box-card-image">
+                        <img src="https://images.unsplash.com/photo-1626844131082-256783844137?w=500&h=600&fit=crop" 
+                             alt="Seasonal Delights Box" 
+                             loading="lazy">
+                        <div class="box-badge">Best Value</div>
+                    </div>
+                    <div class="box-card-content">
+                        <h3 class="box-card-title">Seasonal Delights</h3>
+                        <p class="box-card-description">Celebrate seasons with locally-sourced, farm-fresh ingredients. Ideal for families and beginners.</p>
+                        
+                        <div class="pricing-display">
+                            <div class="price-monthly">
+                                <span class="price-amount">$39</span>
+                                <span class="price-period">/month</span>
+                            </div>
+                            <div class="price-annual" style="display: none;">
+                                <span class="price-amount">$31</span>
+                                <span class="price-period">/month</span>
+                                <span class="price-savings">$372/year (save $96)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="box-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>6-8 Fresh Ingredients</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>2 Seasonal Recipes</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Video Tutorials</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Organic Options</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Family-Friendly</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Free Shipping</span>
+                            </div>
+                        </div>
+                        
+                        <a href="login.html" class="btn-primary" style="width: 100%; margin-top: var(--space-lg);">Subscribe Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== COMPARISON TABLE ========== -->
+    <section class="section" style="background: var(--surface-elevated);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Compare Our Boxes</h2>
+                <p class="section-description">Find the perfect subscription for your culinary journey</p>
+            </div>
+            
+            <div style="overflow-x: auto;">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Features</th>
+                            <th>Seasonal Delights</th>
+                            <th>Artisan Explorer</th>
+                            <th>Global Fusion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Ingredients per box</strong></td>
+                            <td>6-8 items</td>
+                            <td>8-10 items</td>
+                            <td>12-15 items</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Recipes included</strong></td>
+                            <td>2 recipes</td>
+                            <td>3 recipes</td>
+                            <td>5 recipes</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Video tutorials</strong></td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>HD Quality</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Live chef sessions</strong></td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Rare ingredients</strong></td>
+                            <td>—</td>
+                            <td>Occasional</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Bonus cooking tools</strong></td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Community access</strong></td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Rewards program</strong></td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>Double Points</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Free shipping</strong></td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>Global</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cancel anytime</strong></td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== GIFT SUBSCRIPTION ========== -->
+    <section class="section">
+        <div class="container">
+            <div class="theme-reveal-content">
+                <div class="theme-visual">
+                    <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=600&h=700&fit=crop" 
+                         alt="Gift Subscription" 
+                         style="border-radius: var(--radius-xl); box-shadow: var(--shadow-xl);">
+                </div>
+                
+                <div class="theme-details">
+                    <span class="section-badge">Perfect Gift</span>
+                    <h2 class="theme-title">Gift a Culinary Adventure</h2>
+                    <p class="theme-subtitle">Share the joy of discovery with someone special</p>
+                    
+                    <div class="theme-description">
+                        <p>Give the gift of global flavors and culinary exploration. Gift subscriptions are available for 1, 3, 6, or 12 months.</p>
+                    </div>
+                    
+                    <div class="theme-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">💌</span>
+                            <div>
+                                <strong>Personalized Message</strong>
+                                <p>Include a custom message in the first box</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">📅</span>
+                            <div>
+                                <strong>Choose Start Date</strong>
+                                <p>Schedule delivery for any date you prefer</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🎁</span>
+                            <div>
+                                <strong>Premium Gift Packaging</strong>
+                                <p>Beautifully wrapped with gift card included</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="login.html" class="btn-large btn-primary">Gift a Subscription</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="section testimonials" style="background: var(--surface-elevated);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Subscribers Say</h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="testimonial-text">"The Global Fusion box has completely transformed my cooking. I've discovered ingredients I didn't even know existed, and the recipes are restaurant-quality!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/100?img=1" alt="Sarah Chen" loading="lazy">
+                        <div>
+                            <strong>Sarah Chen</strong>
+                            <span>Global Fusion Subscriber</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="testimonial-text">"As a busy parent, the Seasonal Delights box is perfect. Fresh, organic ingredients and simple recipes my whole family enjoys. Worth every penny!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/100?img=8" alt="Marcus Johnson" loading="lazy">
+                        <div>
+                            <strong>Marcus Johnson</strong>
+                            <span>Seasonal Delights Subscriber</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="testimonial-text">"I gifted the Artisan Explorer to my sister, and now we both have subscriptions! It's become our monthly tradition to cook together over video call."</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/100?img=5" alt="Priya Patel" loading="lazy">
+                        <div>
+                            <strong>Priya Patel</strong>
+                            <span>Artisan Explorer Subscriber</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA SECTION ========== -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <h2 class="cta-title">Start Your Culinary Journey Today</h2>
+                    <p class="cta-description">Choose your box and unlock a world of flavors. Cancel anytime, skip months, and join our vibrant community of food lovers.</p>
+                    <div class="cta-buttons">
+                        <a href="login.html" class="btn-large btn-primary">Subscribe Now</a>
+                        <a href="how-it-works.html" class="btn-large btn-secondary">Learn More</a>
+                    </div>
+                    <div class="cta-guarantee">
+                        <span class="guarantee-icon">✓</span>
+                        <span>30-day money-back guarantee • Free shipping • Cancel anytime</span>
+                    </div>
+                </div>
+                <div class="cta-visual">
+                    <div class="cta-boxes">
+                        <div class="mini-box box-1"></div>
+                        <div class="mini-box box-2"></div>
+                        <div class="mini-box box-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">🎁</span>
+                        <span class="logo-text">Mystery Flavor</span>
+                    </a>
+                    <p class="footer-description">Discover culinary adventures delivered to your door.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">📹</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="boxes.html">Our Boxes</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="footer-newsletter-text">Get exclusive recipes and early access.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mystery Flavor Box. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/main.js"></script>
+    
+    <style>
+        /* Pricing Toggle */
+        .pricing-toggle {
+            padding: 0.75rem 2rem;
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            transition: var(--transition-normal);
+            background: var(--surface);
+            border: 2px solid var(--border-light);
+        }
+        
+        .pricing-toggle.active {
+            background: var(--gradient-primary);
+            color: white;
+            border-color: transparent;
+        }
+        
+        .pricing-toggle:hover:not(.active) {
+            border-color: var(--primary-color);
+        }
+        
+        /* Pricing Display */
+        .pricing-display {
+            margin: var(--space-lg) 0;
+        }
+        
+        .price-savings {
+            display: block;
+            font-size: 0.875rem;
+            color: var(--secondary-color);
+            margin-top: 4px;
+        }
+        
+        /* Comparison Table */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--surface);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+        }
+        
+        .comparison-table thead {
+            background: var(--surface-elevated);
+        }
+        
+        .comparison-table th {
+            padding: var(--space-lg);
+            text-align: left;
+            font-weight: 700;
+            border-bottom: 2px solid var(--border-light);
+        }
+        
+        .comparison-table td {
+            padding: var(--space-md) var(--space-lg);
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .comparison-table tr:hover {
+            background: var(--surface-elevated);
+        }
+    </style>
+    
+    <script>
+        // Pricing toggle functionality
+        const toggles = document.querySelectorAll('.pricing-toggle');
+        const monthlyPrices = document.querySelectorAll('.price-monthly');
+        const annualPrices = document.querySelectorAll('.price-annual');
+        
+        toggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                toggles.forEach(t => t.classList.remove('active'));
+                toggle.classList.add('active');
+                
+                const period = toggle.dataset.period;
+                
+                if (period === 'monthly') {
+                    monthlyPrices.forEach(p => p.style.display = 'block');
+                    annualPrices.forEach(p => p.style.display = 'none');
+                } else {
+                    monthlyPrices.forEach(p => p.style.display = 'none');
+                    annualPrices.forEach(p => p.style.display = 'block');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

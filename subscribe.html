@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Subscribe to Mystery Flavor Box - Start your culinary adventure today with exclusive monthly boxes.">
+    <title>Subscribe - Mystery Flavor Box</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css">
+    <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🎁</span>
+                    <span class="logo-text">Mystery Flavor</span>
+                </a>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="boxes.html">Our Boxes</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Stories</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <span class="sun-icon">☀️</span>
+                        <span class="moon-icon">🌙</span>
+                    </button>
+                    <a href="subscribe.html" class="btn-primary">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== SUBSCRIPTION PAGE ========== -->
+    <section class="section auth-section">
+        <div class="container">
+            <div class="auth-container">
+                <!-- Left Side - Information -->
+                <div class="auth-info">
+                    <h1 class="auth-info-title">Start Your Culinary Adventure</h1>
+                    <p class="auth-info-subtitle">Join thousands of food lovers discovering new flavors every month</p>
+                    
+                    <div class="auth-benefits">
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <div>
+                                <strong>Premium Ingredients</strong>
+                                <p>Handpicked from around the world</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <div>
+                                <strong>Exclusive Recipes</strong>
+                                <p>Chef-created with video tutorials</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <div>
+                                <strong>Community Access</strong>
+                                <p>Share and discover with food lovers</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <div>
+                                <strong>Cancel Anytime</strong>
+                                <p>Flexible subscription, no commitments</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="auth-testimonial">
+                        <p>"This subscription has completely transformed my cooking. Every month is a new adventure!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/60?img=1" alt="Sarah Chen">
+                            <div>
+                                <strong>Sarah Chen</strong>
+                                <span>Member since 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Side - Forms -->
+                <div class="auth-forms">
+                    <!-- Sign Up Form -->
+                    <div class="auth-card" id="signupCard">
+                        <h2 class="auth-title">Create Your Account</h2>
+                        <p class="auth-description">Start your 30-day money-back guarantee</p>
+                        
+                        <form class="auth-form" id="signupForm">
+                            <div class="form-group">
+                                <label for="signup-name">Full Name</label>
+                                <input type="text" id="signup-name" name="name" placeholder="John Doe" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="signup-email">Email Address</label>
+                                <input type="email" id="signup-email" name="email" placeholder="you@example.com" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="signup-password">Password</label>
+                                <input type="password" id="signup-password" name="password" placeholder="Minimum 8 characters" required minlength="8">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="signup-plan">Choose Your Box</label>
+                                <select id="signup-plan" name="plan" required>
+                                    <option value="">Select a plan</option>
+                                    <option value="seasonal">Seasonal Delights - $39/month</option>
+                                    <option value="artisan" selected>Artisan Explorer - $49/month (Popular)</option>
+                                    <option value="fusion">Global Fusion - $79/month (Premium)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="signup-terms" name="terms" required>
+                                <label for="signup-terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary btn-full">Create Account & Subscribe</button>
+                        </form>
+                        
+                        <div class="auth-divider">
+                            <span>or sign up with</span>
+                        </div>
+                        
+                        <div class="social-auth">
+                            <button class="social-btn google-btn">
+                                <span>🔵</span> Continue with Google
+                            </button>
+                            <button class="social-btn facebook-btn">
+                                <span>📘</span> Continue with Facebook
+                            </button>
+                        </div>
+                        
+                        <div class="auth-switch">
+                            Already have an account? <a href="#" id="showLogin">Sign in</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Login Form -->
+                    <div class="auth-card" id="loginCard" style="display: none;">
+                        <h2 class="auth-title">Welcome Back</h2>
+                        <p class="auth-description">Sign in to access your dashboard</p>
+                        
+                        <form class="auth-form" id="loginForm">
+                            <div class="form-group">
+                                <label for="login-email">Email Address</label>
+                                <input type="email" id="login-email" name="email" placeholder="you@example.com" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="login-password">Password</label>
+                                <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-checkbox">
+                                    <input type="checkbox" id="remember-me" name="remember">
+                                    <label for="remember-me">Remember me</label>
+                                </div>
+                                <a href="#" class="forgot-password">Forgot password?</a>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary btn-full">Sign In</button>
+                        </form>
+                        
+                        <div class="auth-divider">
+                            <span>or sign in with</span>
+                        </div>
+                        
+                        <div class="social-auth">
+                            <button class="social-btn google-btn">
+                                <span>🔵</span> Continue with Google
+                            </button>
+                            <button class="social-btn facebook-btn">
+                                <span>📘</span> Continue with Facebook
+                            </button>
+                        </div>
+                        
+                        <div class="auth-switch">
+                            Don't have an account? <a href="#" id="showSignup">Sign up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TRUST BADGES ========== -->
+    <section class="section" style="padding-top: 0; padding-bottom: var(--space-2xl);">
+        <div class="container">
+            <div class="trust-badges">
+                <div class="trust-item">
+                    <span class="trust-icon">🔒</span>
+                    <strong>Secure Payment</strong>
+                    <span>256-bit SSL encryption</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-icon">💳</span>
+                    <strong>Money-Back Guarantee</strong>
+                    <span>30-day full refund</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-icon">📦</span>
+                    <strong>Free Shipping</strong>
+                    <span>On all subscription plans</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-icon">⭐</span>
+                    <strong>4.9/5 Rating</strong>
+                    <span>From 12,000+ members</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">🎁</span>
+                        <span class="logo-text">Mystery Flavor</span>
+                    </a>
+                    <p class="footer-description">Discover culinary adventures delivered to your door.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">📹</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="boxes.html">Our Boxes</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="footer-newsletter-text">Get exclusive recipes and early access.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mystery Flavor Box. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/main.js"></script>
+    
+    <style>
+        /* Auth Section */
+        .auth-section {
+            min-height: calc(100vh - 73px);
+            display: flex;
+            align-items: center;
+            background: var(--gradient-overlay);
+        }
+        
+        .auth-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-3xl);
+            align-items: center;
+        }
+        
+        /* Auth Info */
+        .auth-info {
+            padding: var(--space-xl);
+        }
+        
+        .auth-info-title {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: var(--space-md);
+            line-height: 1.1;
+        }
+        
+        .auth-info-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: var(--space-2xl);
+        }
+        
+        .auth-benefits {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-lg);
+            margin-bottom: var(--space-2xl);
+        }
+        
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-md);
+        }
+        
+        .benefit-icon {
+            width: 32px;
+            height: 32px;
+            background: var(--gradient-primary);
+            color: white;
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        
+        .benefit-item strong {
+            display: block;
+            margin-bottom: 4px;
+            font-size: 1.125rem;
+        }
+        
+        .benefit-item p {
+            color: var(--text-secondary);
+            margin: 0;
+        }
+        
+        .auth-testimonial {
+            background: var(--surface);
+            padding: var(--space-xl);
+            border-radius: var(--radius-xl);
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .auth-testimonial p {
+            font-size: 1.125rem;
+            font-style: italic;
+            color: var(--text-secondary);
+            margin-bottom: var(--space-md);
+            line-height: 1.7;
+        }
+        
+        .auth-testimonial .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+        }
+        
+        .auth-testimonial img {
+            width: 48px;
+            height: 48px;
+            border-radius: var(--radius-full);
+            object-fit: cover;
+        }
+        
+        .auth-testimonial strong {
+            display: block;
+            margin-bottom: 2px;
+        }
+        
+        .auth-testimonial span {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+        
+        /* Auth Forms */
+        .auth-forms {
+            position: relative;
+        }
+        
+        .auth-card {
+            background: var(--surface);
+            padding: var(--space-2xl);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-xl);
+            border: 1px solid var(--border-light);
+        }
+        
+        .auth-title {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: var(--space-xs);
+        }
+        
+        .auth-description {
+            color: var(--text-secondary);
+            margin-bottom: var(--space-xl);
+        }
+        
+        .auth-form {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-lg);
+        }
+        
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: var(--space-xs);
+            color: var(--text-primary);
+        }
+        
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: var(--space-md);
+            border: 2px solid var(--border-light);
+            border-radius: var(--radius-md);
+            font-family: inherit;
+            font-size: 1rem;
+            transition: var(--transition-fast);
+            background: var(--surface);
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+        
+        .form-checkbox {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-sm);
+        }
+        
+        .form-checkbox input[type="checkbox"] {
+            width: auto;
+            margin-top: 4px;
+            cursor: pointer;
+        }
+        
+        .form-checkbox label {
+            font-weight: 400;
+            font-size: 0.9375rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+        }
+        
+        .form-checkbox a {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+        
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: var(--space-md);
+        }
+        
+        .forgot-password {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 0.9375rem;
+        }
+        
+        .btn-full {
+            width: 100%;
+            padding: var(--space-md);
+            font-size: 1rem;
+        }
+        
+        .auth-divider {
+            position: relative;
+            text-align: center;
+            margin: var(--space-xl) 0;
+        }
+        
+        .auth-divider::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: var(--border-light);
+            z-index: 0;
+        }
+        
+        .auth-divider span {
+            position: relative;
+            background: var(--surface);
+            padding: 0 var(--space-md);
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            z-index: 1;
+        }
+        
+        .social-auth {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-sm);
+        }
+        
+        .social-btn {
+            width: 100%;
+            padding: var(--space-md);
+            border: 2px solid var(--border-light);
+            border-radius: var(--radius-md);
+            background: var(--surface);
+            font-weight: 600;
+            transition: var(--transition-normal);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-sm);
+        }
+        
+        .social-btn:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+        
+        .social-btn span {
+            font-size: 1.25rem;
+        }
+        
+        .auth-switch {
+            text-align: center;
+            margin-top: var(--space-xl);
+            color: var(--text-secondary);
+        }
+        
+        .auth-switch a {
+            color: var(--primary-color);
+            font-weight: 600;
+            text-decoration: underline;
+        }
+        
+        /* Trust Badges */
+        .trust-badges {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--space-lg);
+            padding: var(--space-xl);
+            background: var(--surface);
+            border-radius: var(--radius-xl);
+            border: 1px solid var(--border-light);
+        }
+        
+        .trust-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: var(--space-xs);
+        }
+        
+        .trust-icon {
+            font-size: 2rem;
+            margin-bottom: var(--space-xs);
+        }
+        
+        .trust-item strong {
+            font-size: 0.9375rem;
+            margin-bottom: 2px;
+        }
+        
+        .trust-item span {
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+        }
+        
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .auth-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .auth-info {
+                order: 2;
+            }
+            
+            .auth-forms {
+                order: 1;
+            }
+            
+            .trust-badges {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .auth-info-title {
+                font-size: 2rem;
+            }
+            
+            .auth-card {
+                padding: var(--space-xl);
+            }
+            
+            .trust-badges {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    
+    <script>
+        // Toggle between Sign Up and Login forms
+        const signupCard = document.getElementById('signupCard');
+        const loginCard = document.getElementById('loginCard');
+        const showLoginBtn = document.getElementById('showLogin');
+        const showSignupBtn = document.getElementById('showSignup');
+        
+        showLoginBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            signupCard.style.display = 'none';
+            loginCard.style.display = 'block';
+        });
+        
+        showSignupBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            loginCard.style.display = 'none';
+            signupCard.style.display = 'block';
+        });
+        
+        // Handle Sign Up
+        document.getElementById('signupForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('signup-name').value;
+            const email = document.getElementById('signup-email').value;
+            const plan = document.getElementById('signup-plan').value;
+            
+            // Show success message
+            const successMsg = document.createElement('div');
+            successMsg.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                padding: 1.5rem 2rem;
+                background: var(--secondary-color);
+                color: white;
+                border-radius: var(--radius-lg);
+                box-shadow: var(--shadow-xl);
+                z-index: 9999;
+                animation: slideIn 0.3s ease;
+            `;
+            successMsg.innerHTML = `
+                <strong>Welcome, ${name.split(' ')[0]}! 🎉</strong><br>
+                <span style="font-size: 0.9rem;">Redirecting to dashboard...</span>
+            `;
+            document.body.appendChild(successMsg);
+            
+            // Simulate redirect to dashboard
+            setTimeout(() => {
+                window.location.href = 'dashboard.html';
+            }, 2000);
+        });
+        
+        // Handle Login
+        document.getElementById('loginForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Show success message
+            const successMsg = document.createElement('div');
+            successMsg.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                padding: 1.5rem 2rem;
+                background: var(--secondary-color);
+                color: white;
+                border-radius: var(--radius-lg);
+                box-shadow: var(--shadow-xl);
+                z-index: 9999;
+                animation: slideIn 0.3s ease;
+            `;
+            successMsg.innerHTML = `
+                <strong>Welcome back! 👋</strong><br>
+                <span style="font-size: 0.9rem;">Signing you in...</span>
+            `;
+            document.body.appendChild(successMsg);
+            
+            // Simulate redirect to dashboard
+            setTimeout(() => {
+                window.location.href = 'dashboard.html';
+            }, 1500);
+        });
+    </script>
+</body>
+</html>

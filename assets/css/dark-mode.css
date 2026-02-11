@@ -1,0 +1,119 @@
+/* ========================================
+   DARK MODE STYLES
+   ======================================== */
+
+[data-theme="dark"] {
+    /* Dark Mode Colors */
+    --primary-color: #FBBF24;
+    --primary-dark: #F59E0B;
+    --primary-light: #FCD34D;
+    
+    --secondary-color: #34D399;
+    --secondary-dark: #10B981;
+    --secondary-light: #6EE7B7;
+    
+    --accent-color: #F87171;
+    --accent-light: #FCA5A5;
+    
+    --background: #0F172A;
+    --surface: #1E293B;
+    --surface-elevated: #334155;
+    
+    --text-primary: #F1F5F9;
+    --text-secondary: #CBD5E1;
+    --text-muted: #94A3B8;
+    
+    --border-color: #334155;
+    --border-light: #475569;
+    
+    /* Dark Gradients */
+    --gradient-primary: linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%);
+    --gradient-secondary: linear-gradient(135deg, #34D399 0%, #10B981 100%);
+    --gradient-hero: linear-gradient(180deg, rgba(15,23,42,0.95) 0%, rgba(30,41,59,0.98) 100%);
+    --gradient-overlay: linear-gradient(135deg, rgba(251,191,36,0.1) 0%, rgba(52,211,153,0.1) 100%);
+    
+    /* Dark Shadows */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6);
+    --shadow-warm: 0 10px 30px rgba(251, 191, 36, 0.2);
+}
+
+/* Dark Mode Specific Adjustments */
+[data-theme="dark"] .navbar {
+    background: rgba(30, 41, 59, 0.95);
+}
+
+[data-theme="dark"] .hero-pattern {
+    background-image: 
+        repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(251,191,36,0.05) 35px, rgba(251,191,36,0.05) 70px),
+        repeating-linear-gradient(-45deg, transparent, transparent 35px, rgba(52,211,153,0.05) 35px, rgba(52,211,153,0.05) 70px);
+}
+
+[data-theme="dark"] .mystery-overlay {
+    background: linear-gradient(135deg, rgba(251,191,36,0.85) 0%, rgba(52,211,153,0.85) 100%);
+}
+
+[data-theme="dark"] .box-badge {
+    background: var(--surface-elevated);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .box-badge.premium {
+    background: var(--gradient-primary);
+    color: var(--background);
+}
+
+[data-theme="dark"] .footer {
+    background: var(--background);
+}
+
+[data-theme="dark"] .theme-toggle .sun-icon {
+    display: none;
+}
+
+[data-theme="dark"] .theme-toggle .moon-icon {
+    display: block;
+}
+
+[data-theme="dark"] .newsletter-form input {
+    background: var(--surface-elevated);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .user-avatar {
+    border-color: var(--border-light);
+}
+
+[data-theme="dark"] .user-avatar:hover {
+    border-color: var(--primary-color);
+}
+
+/* Dark Mode Image Overlays */
+[data-theme="dark"] .box-card-image::after,
+[data-theme="dark"] .recipe-image::after,
+[data-theme="dark"] .history-card img::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode Scroll Bar */
+[data-theme="dark"] ::-webkit-scrollbar {
+    width: 10px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-track {
+    background: var(--background);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+    background: var(--surface-elevated);
+    border-radius: var(--radius-full);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+    background: var(--border-light);
+}

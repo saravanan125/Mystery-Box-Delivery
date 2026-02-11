@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manage your Mystery Flavor Box subscription, reveal monthly themes, and access exclusive recipes.">
+    <title>Dashboard - Mystery Flavor Box</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css">
+</head>
+<body class="dashboard-body">
+    <!-- ========== DASHBOARD NAVIGATION ========== -->
+    <nav class="dashboard-nav">
+        <div class="dashboard-nav-content">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🎁</span>
+                <span class="logo-text">Mystery Flavor</span>
+            </a>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </button>
+                <div class="user-menu">
+                    <button class="user-avatar" id="userMenuToggle">
+                        <img src="https://i.pravatar.cc/80?img=12" alt="User avatar">
+                    </button>
+                    <div class="user-dropdown" id="userDropdown">
+                        <a href="#">Profile Settings</a>
+                        <a href="#">Billing</a>
+                        <a href="#">Help Center</a>
+                        <a href="login.html">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <!-- ========== SIDEBAR ========== -->
+        <aside class="dashboard-sidebar">
+            <nav class="sidebar-nav">
+                <a href="#overview" class="sidebar-link active">
+                    <span class="sidebar-icon">📊</span>
+                    <span>Overview</span>
+                </a>
+                <a href="#subscription" class="sidebar-link">
+                    <span class="sidebar-icon">📦</span>
+                    <span>My Subscription</span>
+                </a>
+                <a href="#boxes" class="sidebar-link">
+                    <span class="sidebar-icon">🎁</span>
+                    <span>Box History</span>
+                </a>
+                <a href="#recipes" class="sidebar-link">
+                    <span class="sidebar-icon">📖</span>
+                    <span>My Recipes</span>
+                </a>
+                <a href="#community" class="sidebar-link">
+                    <span class="sidebar-icon">👥</span>
+                    <span>Community</span>
+                </a>
+                <a href="#preferences" class="sidebar-link">
+                    <span class="sidebar-icon">⚙️</span>
+                    <span>Preferences</span>
+                </a>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <a href="index.html" class="sidebar-link">
+                    <span class="sidebar-icon">🏠</span>
+                    <span>Back to Home</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- ========== MAIN CONTENT ========== -->
+        <main class="dashboard-main">
+            <!-- Welcome Section -->
+            <header class="dashboard-header">
+                <div>
+                    <h1 class="dashboard-title">Welcome back, Sarah! 👋</h1>
+                    <p class="dashboard-subtitle">Your culinary journey continues</p>
+                </div>
+                <div class="header-actions">
+                    <button class="btn-secondary">Skip This Month</button>
+                    <button class="btn-primary">Upgrade Plan</button>
+                </div>
+            </header>
+
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">📦</div>
+                    <div class="stat-content">
+                        <span class="stat-label">Boxes Received</span>
+                        <span class="stat-value">8</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">👨‍🍳</div>
+                    <div class="stat-content">
+                        <span class="stat-label">Recipes Completed</span>
+                        <span class="stat-value">24</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-content">
+                        <span class="stat-label">Rewards Points</span>
+                        <span class="stat-value">450</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">📅</div>
+                    <div class="stat-content">
+                        <span class="stat-label">Next Delivery</span>
+                        <span class="stat-value">Feb 15</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Current Box - Mystery Reveal -->
+            <section class="dashboard-section">
+                <div class="section-header-inline">
+                    <h2 class="section-title-dash">February 2026 Box</h2>
+                    <span class="status-badge shipping">In Transit</span>
+                </div>
+                
+                <div class="mystery-box-card">
+                    <div class="mystery-reveal-container">
+                        <div class="mystery-box-visual">
+                            <div class="mystery-question">?</div>
+                            <button class="btn-reveal" id="revealTheme">
+                                🔓 Reveal This Month's Theme
+                            </button>
+                        </div>
+                        
+                        <div class="mystery-box-info hidden" id="revealedContent">
+                            <div class="revealed-theme">
+                                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop" 
+                                     alt="Mediterranean Coast"
+                                     class="revealed-image">
+                                <div class="revealed-details">
+                                    <h3 class="revealed-title">Mediterranean Coast</h3>
+                                    <p class="revealed-subtitle">Where Sun Meets Sea, and Flavor Meets Passion</p>
+                                    <p class="revealed-description">
+                                        Explore the vibrant flavors of coastal Mediterranean cuisine with premium ingredients from Greece, Italy, and Morocco.
+                                    </p>
+                                    <div class="revealed-includes">
+                                        <h4>Box Includes:</h4>
+                                        <ul>
+                                            <li>✓ Sicilian Sun-Dried Tomatoes</li>
+                                            <li>✓ Cretan Extra Virgin Olive Oil</li>
+                                            <li>✓ Cypriot Sea Salt</li>
+                                            <li>✓ Moroccan Spice Blend</li>
+                                            <li>✓ Greek Oregano & Thyme</li>
+                                            <li>✓ 5 Exclusive Recipe Cards</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#recipes" class="btn-primary">View Recipes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="delivery-tracking">
+                        <h4>Delivery Status</h4>
+                        <div class="tracking-timeline">
+                            <div class="tracking-step completed">
+                                <div class="step-dot"></div>
+                                <div class="step-info">
+                                    <strong>Order Confirmed</strong>
+                                    <span>Feb 1, 2026</span>
+                                </div>
+                            </div>
+                            <div class="tracking-step completed">
+                                <div class="step-dot"></div>
+                                <div class="step-info">
+                                    <strong>Box Packed</strong>
+                                    <span>Feb 5, 2026</span>
+                                </div>
+                            </div>
+                            <div class="tracking-step active">
+                                <div class="step-dot"></div>
+                                <div class="step-info">
+                                    <strong>In Transit</strong>
+                                    <span>Expected Feb 15</span>
+                                </div>
+                            </div>
+                            <div class="tracking-step">
+                                <div class="step-dot"></div>
+                                <div class="step-info">
+                                    <strong>Delivered</strong>
+                                    <span>Pending</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="tracking-link">Track Package →</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Subscription Management -->
+            <section class="dashboard-section">
+                <h2 class="section-title-dash">Subscription Details</h2>
+                
+                <div class="subscription-card">
+                    <div class="subscription-header">
+                        <div>
+                            <h3 class="subscription-plan">Global Fusion Plan</h3>
+                            <p class="subscription-description">Premium monthly subscription</p>
+                        </div>
+                        <div class="subscription-price">
+                            <span class="price-large">$79</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                    </div>
+                    
+                    <div class="subscription-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>12-15 Premium Ingredients</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>5 Exclusive Chef Recipes</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Video Tutorials & Tips</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Free Shipping Worldwide</span>
+                        </div>
+                    </div>
+                    
+                    <div class="subscription-actions">
+                        <button class="btn-secondary">Pause Subscription</button>
+                        <button class="btn-secondary">Change Plan</button>
+                        <button class="btn-danger-outline">Cancel Subscription</button>
+                    </div>
+                    
+                    <div class="subscription-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Member Since:</span>
+                            <span class="meta-value">June 2025</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Next Billing:</span>
+                            <span class="meta-value">March 1, 2026</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Payment Method:</span>
+                            <span class="meta-value">•••• 4242</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recipe Library -->
+            <section class="dashboard-section">
+                <div class="section-header-inline">
+                    <h2 class="section-title-dash">My Recipe Collection</h2>
+                    <a href="recipes.html" class="view-all-link">View All →</a>
+                </div>
+                
+                <div class="recipes-grid">
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop" 
+                                 alt="Mediterranean Paella" 
+                                 loading="lazy">
+                            <div class="recipe-badge">New</div>
+                        </div>
+                        <div class="recipe-content">
+                            <h3 class="recipe-title">Authentic Paella Valenciana</h3>
+                            <div class="recipe-meta">
+                                <span>⏱️ 45 min</span>
+                                <span>🍽️ 4 servings</span>
+                                <span>⭐ 4.8</span>
+                            </div>
+                            <button class="btn-primary-sm">Start Cooking</button>
+                        </div>
+                    </div>
+                    
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&h=300&fit=crop" 
+                                 alt="Greek Moussaka" 
+                                 loading="lazy">
+                        </div>
+                        <div class="recipe-content">
+                            <h3 class="recipe-title">Traditional Greek Moussaka</h3>
+                            <div class="recipe-meta">
+                                <span>⏱️ 90 min</span>
+                                <span>🍽️ 6 servings</span>
+                                <span>⭐ 4.9</span>
+                            </div>
+                            <button class="btn-primary-sm">Start Cooking</button>
+                        </div>
+                    </div>
+                    
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?w=400&h=300&fit=crop" 
+                                 alt="Sicilian Caponata" 
+                                 loading="lazy">
+                        </div>
+                        <div class="recipe-content">
+                            <h3 class="recipe-title">Sicilian Caponata</h3>
+                            <div class="recipe-meta">
+                                <span>⏱️ 30 min</span>
+                                <span>🍽️ 4 servings</span>
+                                <span>⭐ 4.7</span>
+                            </div>
+                            <button class="btn-primary-sm">Start Cooking</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Community Feed -->
+            <section class="dashboard-section">
+                <div class="section-header-inline">
+                    <h2 class="section-title-dash">Community Highlights</h2>
+                    <a href="#community" class="view-all-link">View All →</a>
+                </div>
+                
+                <div class="community-grid">
+                    <div class="community-card">
+                        <div class="community-header">
+                            <img src="https://i.pravatar.cc/50?img=3" alt="User" class="user-pic">
+                            <div>
+                                <strong>Maria Rodriguez</strong>
+                                <span class="post-time">2 hours ago</span>
+                            </div>
+                        </div>
+                        <p class="community-text">Just finished the Paella recipe from this month's box! The saffron was incredible. My family loved it! 🥘❤️</p>
+                        <img src="https://images.unsplash.com/photo-1534080564583-6be75777b70a?w=500&h=350&fit=crop" 
+                             alt="Community post" 
+                             class="community-image"
+                             loading="lazy">
+                        <div class="community-actions">
+                            <button class="action-btn">❤️ 24</button>
+                            <button class="action-btn">💬 5</button>
+                            <button class="action-btn">🔖 Save</button>
+                        </div>
+                    </div>
+                    
+                    <div class="community-card">
+                        <div class="community-header">
+                            <img src="https://i.pravatar.cc/50?img=7" alt="User" class="user-pic">
+                            <div>
+                                <strong>James Chen</strong>
+                                <span class="post-time">5 hours ago</span>
+                            </div>
+                        </div>
+                        <p class="community-text">Pro tip: Toast the spices before using them in the Moussaka. Game changer! 🔥</p>
+                        <div class="community-actions">
+                            <button class="action-btn">❤️ 18</button>
+                            <button class="action-btn">💬 3</button>
+                            <button class="action-btn">🔖 Save</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Rewards Program -->
+            <section class="dashboard-section">
+                <h2 class="section-title-dash">Rewards & Achievements</h2>
+                
+                <div class="rewards-card">
+                    <div class="rewards-header">
+                        <div>
+                            <h3>Your Rewards Balance</h3>
+                            <p class="rewards-points">450 Points</p>
+                        </div>
+                        <button class="btn-primary">Redeem Rewards</button>
+                    </div>
+                    
+                    <div class="rewards-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%"></div>
+                        </div>
+                        <p class="progress-text">50 points until your next reward!</p>
+                    </div>
+                    
+                    <div class="achievements-grid">
+                        <div class="achievement-badge unlocked">
+                            <span class="badge-icon">🏆</span>
+                            <span class="badge-name">First Box</span>
+                        </div>
+                        <div class="achievement-badge unlocked">
+                            <span class="badge-icon">👨‍🍳</span>
+                            <span class="badge-name">Chef Apprentice</span>
+                        </div>
+                        <div class="achievement-badge unlocked">
+                            <span class="badge-icon">🌍</span>
+                            <span class="badge-name">World Explorer</span>
+                        </div>
+                        <div class="achievement-badge locked">
+                            <span class="badge-icon">🔒</span>
+                            <span class="badge-name">Master Chef</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Box History -->
+            <section class="dashboard-section">
+                <div class="section-header-inline">
+                    <h2 class="section-title-dash">Past Boxes</h2>
+                    <a href="#boxes" class="view-all-link">View All →</a>
+                </div>
+                
+                <div class="history-grid">
+                    <div class="history-card">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300&h=200&fit=crop" 
+                             alt="Asian Fusion"
+                             loading="lazy">
+                        <div class="history-content">
+                            <h4>Asian Fusion</h4>
+                            <p class="history-date">January 2026</p>
+                            <a href="#" class="history-link">View Details →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="history-card">
+                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=300&h=200&fit=crop" 
+                             alt="Winter Comfort"
+                             loading="lazy">
+                        <div class="history-content">
+                            <h4>Winter Comfort</h4>
+                            <p class="history-date">December 2025</p>
+                            <a href="#" class="history-link">View Details →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="history-card">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=300&h=200&fit=crop" 
+                             alt="Harvest Festival"
+                             loading="lazy">
+                        <div class="history-content">
+                            <h4>Harvest Festival</h4>
+                            <p class="history-date">November 2025</p>
+                            <a href="#" class="history-link">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/dashboard.js"></script>
+</body>
+</html>

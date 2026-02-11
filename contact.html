@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Mystery Flavor Box - We're here to help with any questions about subscriptions, shipping, or recipes.">
+    <title>Contact Us - Mystery Flavor Box</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css">
+    <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🎁</span>
+                    <span class="logo-text">Mystery Flavor</span>
+                </a>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="boxes.html">Our Boxes</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Stories</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <span class="sun-icon">☀️</span>
+                        <span class="moon-icon">🌙</span>
+                    </button>
+                    <a href="dashboard.html" class="btn-nav">Dashboard</a>
+                    <a href="login.html" class="btn-primary">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="section" style="padding-top: 6rem;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Get in Touch</span>
+                <h1 class="section-title">We're Here to Help</h1>
+                <p class="section-description">
+                    Have questions about our boxes, shipping, or recipes? Our team is ready to assist you.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2 style="font-family: var(--font-display); font-size: 2rem; margin-bottom: var(--space-md);">Send Us a Message</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: var(--space-xl);">Fill out the form below and we'll get back to you within 24 hours.</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a topic</option>
+                                <option value="subscription">Subscription Questions</option>
+                                <option value="shipping">Shipping & Delivery</option>
+                                <option value="billing">Billing & Payments</option>
+                                <option value="recipes">Recipe Support</option>
+                                <option value="dietary">Dietary Restrictions</option>
+                                <option value="feedback">Feedback & Suggestions</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary" style="width: 100%; padding: var(--space-md);">Send Message</button>
+                    </form>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">📧</div>
+                        <h3>Email Us</h3>
+                        <p>support@mysteryflavor.com</p>
+                        <span class="info-subtitle">We respond within 24 hours</span>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">📞</div>
+                        <h3>Call Us</h3>
+                        <p>+1 (555) 123-4567</p>
+                        <span class="info-subtitle">Mon-Fri, 9AM-6PM EST</span>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">💬</div>
+                        <h3>Live Chat</h3>
+                        <p>Available on our website</p>
+                        <span class="info-subtitle">Real-time support</span>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <h3>Visit Us</h3>
+                        <p>123 Culinary Lane<br>San Francisco, CA 94102</p>
+                        <span class="info-subtitle">Weekdays, 10AM-5PM</span>
+                    </div>
+                    
+                    <div class="info-card social-card">
+                        <h3>Follow Us</h3>
+                        <div class="social-links" style="justify-content: center; margin-top: var(--space-md);">
+                            <a href="#" aria-label="Instagram">📷</a>
+                            <a href="#" aria-label="Facebook">📘</a>
+                            <a href="#" aria-label="Twitter">🐦</a>
+                            <a href="#" aria-label="YouTube">📹</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" style="background: var(--surface-elevated);">
+        <div class="container" style="max-width: 900px;">
+            <div class="section-header">
+                <h2 class="section-title">Common Questions</h2>
+                <p class="section-description">Find quick answers to frequently asked questions</p>
+            </div>
+            
+            <div style="display: flex; flex-direction: column; gap: var(--space-md);">
+                <details class="faq-item">
+                    <summary>How do I track my order?</summary>
+                    <p>Once your box ships, you'll receive a tracking number via email. You can also track your delivery in real-time through your dashboard.</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>Can I change my delivery address?</summary>
+                    <p>Yes! You can update your delivery address in your account settings up to 5 days before your box ships.</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>What if I'm not home for delivery?</summary>
+                    <p>Our boxes can be safely left at your door. All perishable items are vacuum-sealed and insulated to stay fresh for 24 hours.</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>How do I contact customer support?</summary>
+                    <p>You can reach us via email at support@mysteryflavor.com, call us at +1 (555) 123-4567, or use the live chat on our website during business hours.</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>Do you offer corporate or bulk orders?</summary>
+                    <p>Yes! We offer special pricing for corporate gifts and bulk orders. Contact us at corporate@mysteryflavor.com for more information.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section">
+        <div class="container">
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0977518435647!2d-122.41941588468226!3d37.77492977975903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050fa5!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1234567890"
+                    width="100%" 
+                    height="450" 
+                    style="border:0; border-radius: var(--radius-xl);" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">🎁</span>
+                        <span class="logo-text">Mystery Flavor</span>
+                    </a>
+                    <p class="footer-description">Discover culinary adventures delivered to your door.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">📹</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="boxes.html">Our Boxes</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="footer-newsletter-text">Get exclusive recipes and early access.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mystery Flavor Box. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    
+    <style>
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: var(--space-3xl);
+        }
+        
+        .contact-form-wrapper {
+            background: var(--surface);
+            padding: var(--space-2xl);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-lg);
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-xs);
+        }
+        
+        .form-group label {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: var(--space-md);
+            border: 2px solid var(--border-light);
+            border-radius: var(--radius-md);
+            font-family: inherit;
+            font-size: 1rem;
+            transition: var(--transition-fast);
+            background: var(--surface);
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-lg);
+        }
+        
+        .info-card {
+            background: var(--surface);
+            padding: var(--space-xl);
+            border-radius: var(--radius-xl);
+            border: 1px solid var(--border-light);
+            text-align: center;
+            transition: var(--transition-normal);
+        }
+        
+        .info-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .info-icon {
+            font-size: 2.5rem;
+            margin-bottom: var(--space-md);
+        }
+        
+        .info-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            margin-bottom: var(--space-sm);
+        }
+        
+        .info-card p {
+            color: var(--text-secondary);
+            margin-bottom: var(--space-xs);
+        }
+        
+        .info-subtitle {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+        
+        .social-card {
+            background: var(--gradient-primary);
+            color: white;
+        }
+        
+        .social-card h3 {
+            color: white;
+        }
+        
+        .map-container {
+            margin-top: var(--space-lg);
+        }
+        
+        /* FAQ Styles */
+        .faq-item {
+            background: var(--surface);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            border: 1px solid var(--border-light);
+            transition: var(--transition-normal);
+        }
+        
+        .faq-item:hover {
+            box-shadow: var(--shadow-md);
+        }
+        
+        .faq-item summary {
+            font-weight: 600;
+            font-size: 1.125rem;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+        
+        .faq-item summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            transition: transform var(--transition-fast);
+        }
+        
+        .faq-item[open] summary::after {
+            transform: rotate(45deg);
+        }
+        
+        .faq-item p {
+            margin-top: var(--space-md);
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        @media (max-width: 1024px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>

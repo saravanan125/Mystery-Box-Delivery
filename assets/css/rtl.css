@@ -1,0 +1,156 @@
+/* ========================================
+   RTL (Right-to-Left) SUPPORT
+   For Arabic, Hebrew, and other RTL languages
+   ======================================== */
+
+[dir="rtl"] {
+    direction: rtl;
+}
+
+/* Navigation */
+[dir="rtl"] .nav-wrapper {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-menu {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-actions {
+    flex-direction: row-reverse;
+}
+
+/* Hero Section */
+[dir="rtl"] .hero-content {
+    direction: rtl;
+}
+
+[dir="rtl"] .hero-stats {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .btn-arrow {
+    transform: rotate(180deg);
+}
+
+[dir="rtl"] .btn-primary:hover .btn-arrow {
+    transform: rotate(180deg) translateX(-4px);
+}
+
+/* Cards and Grids */
+[dir="rtl"] .box-card-footer {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .feature-item {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .highlight-item {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .testimonial-author {
+    flex-direction: row-reverse;
+}
+
+/* Footer */
+[dir="rtl"] .footer-content {
+    direction: rtl;
+}
+
+[dir="rtl"] .footer-logo {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .social-links {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .footer-bottom {
+    flex-direction: row-reverse;
+}
+
+/* Dashboard */
+[dir="rtl"] .dashboard-container {
+    grid-template-columns: 1fr 260px;
+}
+
+[dir="rtl"] .dashboard-sidebar {
+    border-right: none;
+    border-left: 1px solid var(--border-light);
+}
+
+[dir="rtl"] .sidebar-link {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .sidebar-link.active::before {
+    left: auto;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+[dir="rtl"] .dashboard-header {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .stat-card {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .section-header-inline {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .community-header {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .community-actions {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .rewards-header {
+    flex-direction: row-reverse;
+}
+
+/* Adjustments for text alignment */
+[dir="rtl"] .hero-description,
+[dir="rtl"] .section-description,
+[dir="rtl"] .box-card-description,
+[dir="rtl"] .step-description,
+[dir="rtl"] .theme-description,
+[dir="rtl"] .testimonial-text {
+    text-align: right;
+}
+
+/* Form inputs */
+[dir="rtl"] input,
+[dir="rtl"] textarea,
+[dir="rtl"] select {
+    text-align: right;
+}
+
+/* Lists */
+[dir="rtl"] ul,
+[dir="rtl"] ol {
+    padding-right: var(--space-lg);
+    padding-left: 0;
+}
+
+/* Floating cards adjustment */
+[dir="rtl"] .card-1 {
+    right: auto;
+    left: -10%;
+}
+
+[dir="rtl"] .card-2 {
+    left: auto;
+    right: -15%;
+}
+
+[dir="rtl"] .card-3 {
+    right: auto;
+    left: -5%;
+}

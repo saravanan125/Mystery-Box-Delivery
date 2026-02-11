@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover culinary adventures with Mystery Flavor Box - Monthly curated mystery boxes featuring exotic ingredients, exclusive recipes, and unforgettable cooking experiences.">
+    <title>Mystery Flavor Box - Culinary Adventures Delivered Monthly</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css">
+    <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🎁</span>
+                    <span class="logo-text">Mystery Flavor</span>
+                </a>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="boxes.html">Our Boxes</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog
+                    </a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <span class="sun-icon">☀️</span>
+                        <span class="moon-icon">🌙</span>
+                    </button>
+                    <a href="dashboard.html" class="btn-nav">Dashboard</a>
+                    <a href="login.html" class="btn-primary">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-pattern"></div>
+            <div class="hero-gradient"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="hero-badge">New Monthly Theme Revealed</span>
+                    <h1 class="hero-title">
+                        Unbox Culinary
+                        <span class="gradient-text">Mystery</span>
+                        Every Month
+                    </h1>
+                    <p class="hero-description">
+                        Discover exotic ingredients, secret recipes, and culinary adventures 
+                        curated by world-renowned chefs. Each box is a journey to unexplored flavors.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="boxes.html" class="btn-large btn-primary">
+                            Start Your Adventure
+                            <span class="btn-arrow">→</span>
+                        </a>
+                        <a href="how-it-works.html" class="btn-large btn-secondary">
+                            How It Works
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">12K+</span>
+                            <span class="stat-label">Active Subscribers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">4.9</span>
+                            <span class="stat-label">Average Rating</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Countries Served</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="box-preview">
+                        <div class="box-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1607525646412-0b1d733e1e4f?w=600&h=600&fit=crop" 
+                                 alt="Mystery culinary box" 
+                                 class="box-image"
+                                 loading="eager">
+                            <div class="mystery-overlay">
+                                <span class="mystery-text">?</span>
+                            </div>
+                        </div>
+                        <div class="box-floating-cards">
+                            <div class="floating-card card-1">
+                                <span class="card-icon">🌶️</span>
+                                <span class="card-text">Exotic Spices</span>
+                            </div>
+                           <div class="floating-card card-2">
+                                <span class="card-icon">👌</span>
+                                <span class="card-text">Flavour Bliss</span>
+                            </div>
+                            <div class="floating-card card-3">
+                                <span class="card-icon">📖</span>
+                                <span class="card-text">Secret Recipes</span>
+                            </div>
+                            <div class="floating-card card-4">
+                                <span class="card-icon">🎯</span>
+                                <span class="card-text">Chef Curated</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== HOW IT WORKS ========== -->
+    <section class="section how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Simple Process</span>
+                <h2 class="section-title">Your Culinary Journey in 4 Steps</h2>
+                <p class="section-description">From subscription to cooking masterpiece</p>
+            </div>
+            
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">📦</div>
+                    <h3 class="step-title">Choose Your Plan</h3>
+                    <p class="step-description">Select from our monthly, quarterly, or annual subscriptions. Each plan offers unique benefits and savings.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">🎁</div>
+                    <h3 class="step-title">Receive Your Mystery Box</h3>
+                    <p class="step-description">Get your curated box delivered right to your door. Fresh ingredients, premium quality, vacuum-sealed for freshness.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">🔓</div>
+                    <h3 class="step-title">Unlock the Theme</h3>
+                    <p class="step-description">Access exclusive recipes and video tutorials in your dashboard. Learn about the ingredients and cultural stories.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">04</div>
+                    <div class="step-icon">👨‍🍳</div>
+                    <h3 class="step-title">Create & Share</h3>
+                    <p class="step-description">Cook amazing dishes and share your creations with our community. Earn rewards and unlock special surprises.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FEATURED BOXES ========== -->
+    <section class="section featured-boxes">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Collections</span>
+                <h2 class="section-title">Choose Your Adventure</h2>
+                <p class="section-description">Three unique experiences, endless possibilities</p>
+            </div>
+            
+            <div class="boxes-grid">
+                <div class="box-card">
+                    <div class="box-card-image">
+                        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=500&h=600&fit=crop" 
+                             alt="Artisan Explorer Box" 
+                             loading="lazy">
+                        <div class="box-badge">Most Popular</div>
+                    </div>
+                    <div class="box-card-content">
+                        <h3 class="box-card-title">Artisan Explorer</h3>
+                        <p class="box-card-description">Discover handcrafted ingredients from small-batch producers worldwide.</p>
+                        <div class="box-features">
+                            <span class="feature-tag">8-10 Items</span>
+                            <span class="feature-tag">Vegetarian Options</span>
+                            <span class="feature-tag">3 Recipes</span>
+                        </div>
+                        <div class="box-card-footer">
+                            <div class="box-price">
+                                <span class="price-amount">$49</span>
+                                <span class="price-period">/month</span>
+                            </div>
+                            <a href="boxes.html" class="btn-primary">Subscribe Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="box-card featured">
+                    <div class="box-card-image">
+                        <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=500&h=600&fit=crop" 
+                             alt="Global Fusion Box" 
+                             loading="lazy">
+                        <div class="box-badge premium">Premium</div>
+                    </div>
+                    <div class="box-card-content">
+                        <h3 class="box-card-title">Global Fusion</h3>
+                        <p class="box-card-description">Experience fusion cuisine with exotic ingredients and chef-signature recipes.</p>
+                        <div class="box-features">
+                            <span class="feature-tag">12-15 Items</span>
+                            <span class="feature-tag">Rare Finds</span>
+                            <span class="feature-tag">5 Recipes</span>
+                        </div>
+                        <div class="box-card-footer">
+                            <div class="box-price">
+                                <span class="price-amount">$79</span>
+                                <span class="price-period">/month</span>
+                            </div>
+                            <a href="boxes.html" class="btn-primary">Subscribe Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="box-card">
+                    <div class="box-card-image">
+                        <img src="https://images.unsplash.com/photo-1626844131082-256783844137?w=500&h=600&fit=crop" 
+                             alt="Seasonal Delights Box" 
+                             loading="lazy">
+                        <div class="box-badge">Limited Edition</div>
+                    </div>
+                    <div class="box-card-content">
+                        <h3 class="box-card-title">Seasonal Delights</h3>
+                        <p class="box-card-description">Celebrate seasons with locally-sourced, farm-fresh ingredients.</p>
+                        <div class="box-features">
+                            <span class="feature-tag">6-8 Items</span>
+                            <span class="feature-tag">Organic</span>
+                            <span class="feature-tag">2 Recipes</span>
+                        </div>
+                        <div class="box-card-footer">
+                            <div class="box-price">
+                                <span class="price-amount">$39</span>
+                                <span class="price-period">/month</span>
+                            </div>
+                            <a href="boxes.html" class="btn-primary">Subscribe Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== THIS MONTH'S THEME ========== -->
+    <section class="section theme-reveal">
+        <div class="container">
+            <div class="theme-reveal-content">
+                <div class="theme-visual">
+                    <div class="theme-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=700&fit=crop" 
+                             alt="Mediterranean Coast theme" 
+                             loading="lazy">
+                        <div class="theme-overlay">
+                            <span class="theme-month">February 2026</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="theme-details">
+                    <span class="section-badge">This Month's Journey</span>
+                    <h2 class="theme-title">Mediterranean Coast</h2>
+                    <p class="theme-subtitle">Where Sun Meets Sea, and Flavor Meets Passion</p>
+                    
+                    <div class="theme-description">
+                        <p>Embark on a coastal adventure from Greece to Spain. This month's box features sun-dried tomatoes from Sicily, hand-harvested sea salt from Cyprus, premium olive oil from Crete, and artisanal spices from Morocco.</p>
+                        <p>Unlock recipes for authentic Paella, Greek Moussaka, and Sicilian Caponata, complete with video tutorials from Michelin-starred chefs.</p>
+                    </div>
+                    
+                    <div class="theme-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🌿</span>
+                            <div>
+                                <strong>Fresh Herbs</strong>
+                                <p>Oregano, Thyme & Basil</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🫒</span>
+                            <div>
+                                <strong>Premium Oils</strong>
+                                <p>Cold-Pressed Extra Virgin</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🌶️</span>
+                            <div>
+                                <strong>Exotic Spices</strong>
+                                <p>Saffron & Paprika</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="boxes.html" class="btn-large btn-primary">Get This Month's Box</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Member Stories</span>
+                <h2 class="section-title">What Our Community Says</h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="testimonial-text">"Every month feels like opening a treasure chest. The ingredients are always top quality, and the recipes push me to try things I never would have discovered on my own."</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/100?img=1" alt="Sarah Chen" loading="lazy">
+                        <div>
+                            <strong>Sarah Chen</strong>
+                            <span>San Francisco, CA</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="testimonial-text">"As a busy parent, I love that everything is curated for me. The video tutorials make it easy to create restaurant-quality meals at home. My kids are now adventurous eaters!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/100?img=8" alt="Marcus Johnson" loading="lazy">
+                        <div>
+                            <strong>Marcus Johnson</strong>
+                            <span>Austin, TX</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="testimonial-text">"The community aspect is incredible. Sharing my dishes and seeing what others create adds so much value. Plus, the mystery element keeps things exciting every month!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/100?img=5" alt="Priya Patel" loading="lazy">
+                        <div>
+                            <strong>Priya Patel</strong>
+                            <span>London, UK</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA SECTION ========== -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to Start Your Culinary Adventure?</h2>
+                    <p class="cta-description">Join thousands of food lovers discovering new flavors every month. Cancel anytime, skip deliveries, and unlock exclusive member perks.</p>
+                    <div class="cta-buttons">
+                        <a href="boxes.html" class="btn-large btn-primary">Choose Your Box</a>
+                        <a href="login.html" class="btn-large btn-secondary">Gift a Subscription</a>
+                    </div>
+                    <div class="cta-guarantee">
+                        <span class="guarantee-icon">✓</span>
+                        <span>30-day money-back guarantee • Free shipping on all plans</span>
+                    </div>
+                </div>
+                <div class="cta-visual">
+                    <div class="cta-boxes">
+                        <div class="mini-box box-1"></div>
+                        <div class="mini-box box-2"></div>
+                        <div class="mini-box box-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">🎁</span>
+                        <span class="logo-text">Mystery Flavor</span>
+                    </a>
+                    <p class="footer-description">Discover culinary adventures delivered to your door. Experience global cuisines through curated mystery boxes.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">📹</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="boxes.html">Our Boxes</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="footer-newsletter-text">Get exclusive recipes and early access to new themes.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mystery Flavor Box. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
